@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #d1dadb;
+}
+
+/* ----------------------------------------------top section-------------------------------------------- */
+.top_head {
+  width: 100%;
+  height: 50px;
+  background-color: #1c292c;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+.top_head_text a {
+  margin-left: 10px;
+  color: rgb(106, 219, 182);
+}
+
+/* ---------------------------------------------------main-section------------------------------------------- */
+.main_body {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  position: relative;
+  top: -50px;
+  margin-top: 30px;
+  margin-bottom: -70px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+/* -------------------------------------------------------------------------hero section----------------------------------------------------------------- */
+.hero_section {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.hero_section_container {
+  width: 98%;
+  margin: 0 auto;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 70%;
+  justify-content: flex-start;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.917), rgba(52, 48, 48, 0.639)), url('Images/contact_us.png');
+  background-size: cover;
+}
+
+.hero_section_text_container {
+  padding: 20px;
+  color: #fff;
+  display: grid;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: uppercase;
+}
+
+.hero_section_text_container .row,
+.hero_btn_container {
+  margin-left: 100px;
+}
+
+.hero_section_text_container p {
+  margin-top: 40px;
+}
+
+.hero_text {
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.hero_text_cursive {
+  color: #0fc29c;
+  font-size: 60px;
+  text-transform: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hero_section_icon {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.hero_section_btn2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(121, 121, 121, 0.897);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.hero_section_btn2:hover {
+  color: #fff;
+  background: rgba(121, 121, 121, 0.897);
+  border: 2px solid rgba(121, 121, 121, 0.897);
+}
+
+.hero_btn_container {
+  display: flex;
+  margin: 20px 100px;
+}
+
+.hero_section_btn1 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 15px;
+  background-color: #0fc29c;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  margin-right: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.hero_btn_container i {
+  transform: rotate(45deg);
+}
+
+.hero_section_btn1:hover {
+  color: #fff;
+  background: #0ba584;
+}
+
+
+.service_btn_container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.service_btn {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  padding: 15px 35px;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 15px;
+  background-color: #ffffff;
+  border: 1px solid #0ba584;
+  border-radius: 40px;
+  margin-top: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.service_btn i {
+  transform: rotate(45deg);
+}
+
+.service_btn:hover {
+  color: #fff;
+  background: #0ba584;
+}
+
+/* ---------------------------------------------------------------------------Contact form section------------------------------------------------------- */
+
+.contact_form_section {
+  width: 98%;
+  height: 100%;
+  padding: 20px;
+  background-color: #d1dadb;
+  border-radius: 10px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.message {
+  color: rgba(47, 44, 44, 0.822);
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.form label {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input+span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: rgb(14, 13, 13);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid+span {
+  color: green;
+}
+
+.input01 {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input01+span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  padding: 0 5px;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown+span {
+  top: 50px;
+  font-size: 0.9em;
+  color: #1c292c;
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
+  top: -10px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input01:valid+span {
+  color: green;
+}
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #1c292c;
+  border-radius: 0px;
+  color: #1c292c;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #1c292c;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 15px;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #1c292c;
+  transform: translateX(30%);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: #1c292c;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
