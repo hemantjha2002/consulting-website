@@ -52,10 +52,11 @@ body {
   width: 100%;
   height: auto;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .hero_section_container {
-  width: 98%;
+  width: 99%;
   margin: 0 auto;
   height: auto;
   padding: 10px;
@@ -201,6 +202,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .form {

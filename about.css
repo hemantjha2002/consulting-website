@@ -54,10 +54,11 @@ body {
     width: 100%;
     height: auto;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .hero_section_container {
-    width: 98%;
+    width: 99%;
     margin: 0 auto;
     height: auto;
     padding: 10px;
@@ -219,6 +220,7 @@ body {
     height: 100%;
     background-color: #d1dadb;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .about_us_container {
@@ -416,7 +418,7 @@ body {
     height: 100%;
     background-color: #d1dadb;
     border-radius: 20px;
-
+    overflow: hidden;
 }
 
 .vision_mission_container {
@@ -482,6 +484,7 @@ body {
     height: 100%;
     padding: 50px;
     background-color: #1c292c;
+    overflow: hidden;
 }
 
 .contact_us_head {
