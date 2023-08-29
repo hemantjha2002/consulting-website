@@ -15,6 +15,9 @@ body {
   height: 100%;
   background-color: #d1dadb;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 
 /* ----------------------------------------------top section-------------------------------------------- */
 .top_head {

@@ -8,7 +8,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: sticky;
     margin: 5px auto;
-    top: 10px;
+    top: 5px;
     z-index: 88;
 }
 
@@ -125,4 +125,17 @@ hr {
 
 .dropdown_section i {
     transform: rotate(45deg);
+}
+
+/* -------------------------------------------responsiveness--------------------------------------------------------- */
+@media screen and (max-width:670px) {
+
+    .icon_section,
+    .icon_grid,
+    .contact_btn_section {
+        visibility: hidden;
+        height: 0;
+    }
+
+    
 }

@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lastName = $_POST["lastName"];
     $contact = $_POST["contact"];
     $email = $_POST["email"];
-    $message = $_POST["message"];
+    $service = $_POST["service"];
     $userMail = new PHPMailer(true);
 
     try {
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $userMail->isHTML(true);
         $userMail->Subject = "Thank You for Contacting Us";
-        $userMail->Body = "Dear $firstName,<br><br>We have received your contact form submission. Thank you for getting in touch with us.<br><br>Best regards,<br> NAISHA'S 1CR CLUB CONSULTING SERVICES PVT. LTD.";
+        $userMail->Body = "Dear $firstName,<br><br>We have received your booking request our team will schedule a meeting. Thank you for getting in touch with us.<br><br>Best regards,<br>NAISHA'S 1CR CLUB CONSULTING SERVICES PVT. LTD.";
 
         $userMail->send();
     } catch (Exception $e) {
@@ -55,8 +55,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->addAddress($recipient);
         
         $mail->isHTML(false);
-        $mail->Subject = "Contact from submission from website";
-        $mail->Body = "Name: $firstName $lastname\nEmail: $email\n Contact Number: $contact\n Message:$message\n";
+        $mail->Subject = "Request for scheduling an appointment";
+        $mail->Body = "Name: $firstName $lastname\nEmail: $email\n Contact Number: $contact\n Service required:$service\n";
 
         $mail->send();
         header("Location:thank_you.html"); 

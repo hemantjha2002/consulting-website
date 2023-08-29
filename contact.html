@@ -34,7 +34,7 @@
                     <div class="icon_grid">
                         <div class="col">
                             <div class="icon_img">
-                                <a href="Index.html"> <img src="Images/logo_1.png" /></a>
+                                <a href="index.html"> <img src="Images/logo_1.png" /></a>
                             </div>
                         </div>
                         <div class="col">
@@ -76,7 +76,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="Index.html"><button class="Contact_btn">
+                                <a href="index.html"><button class="Contact_btn">
                                         Home
                                         <i class="fa-solid fa-arrow-up-long"></i></button></a>
                             </div>
@@ -121,13 +121,33 @@
                             </div>
 
                             <label>
-                                <input type="email" id="email" name="email" required class="input">
+                                <input type="email" id="email" name="email" required class="input"
+                                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                                 <span>email</span>
                             </label>
 
                             <label>
-                                <input id="contact" name="contact" required type="number" placeholder="" class="input">
+                                <input id="contact" name="contact" required type="number" placeholder="" class="input"
+                                    oninput="validateContact(this)">
                                 <span>contact number</span>
+                                <div id="contact-error" style="color: red; width: 100%;"></div>
+
+                                <script>
+                                    function validateContact(input) {
+                                        const value = input.value;
+                                        const errorSpan = document.getElementById("contact-error");
+
+                                        if (value.length > 10) {
+                                            errorSpan.textContent = "Contact number cannot be more than 10 digits.";
+                                        } else if (value < 0) {
+                                            errorSpan.textContent = "Contact number cannot be negative.";
+                                        } else {
+                                            errorSpan.textContent = "";
+                                        }
+                                    }
+                                </script>
+
+
                             </label>
 
                             <label>
@@ -159,7 +179,7 @@
                         <div class="container ">
                             <div class="row ">
                                 <div class="footer_logo ">
-                                    <a href="Index.html"> <img src="Images/logo_1.png" alt="Logo"></a>
+                                    <a href="index.html"> <img src="Images/logo_1.png" alt="Logo"></a>
                                 </div>
                             </div>
                             <div class="row">
