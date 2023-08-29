@@ -7,13 +7,12 @@ footer {
 }
 
 .footer_logo {
-    margin-top: 60px;
-    margin-right: 20px;
     text-align: center;
 }
 
 .footer_logo img {
-    width: 150px;
+    width: 40%;
+
 }
 
 .footer_sub_head {
