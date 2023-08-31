@@ -52,7 +52,7 @@ body {
 }
 
 /* ----------------------------------------------------------terms section--------------------------------------------- */
-.discloser_section {
+.Disclosures_section {
     width: 100%;
     height: 100%;
     padding: 20px 100px;
@@ -61,12 +61,12 @@ body {
     align-items: center;
 }
 
-.discloser_section_container {
+.Disclosures_section_container {
     width: 100%;
     height: 100%;
 }
 
-.discloser_head {
+.Disclosures_head {
     width: 100%;
     font-size: 30px;
     text-align: center;
@@ -75,7 +75,7 @@ body {
     margin-bottom: 50px;
 }
 
-.discloser_description_container {
+.Disclosures_description_container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -84,7 +84,7 @@ body {
     color: #404040;
 }
 
-.discloser_description {
+.Disclosures_description {
     width: 70%;
     text-align: start;
 }
