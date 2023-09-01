@@ -317,12 +317,13 @@ footer {
     .condition {
         width: 300px;
         color: #000000;
-        font-size: 15px;
+        font-size: 12px;
         letter-spacing: 1px;
         margin-bottom: 5px;
         margin-top: 5px;
         font-family: "Lato", arial, sans-serif;
         text-align: left;
+        text-transform: uppercase;
     }
 
 }

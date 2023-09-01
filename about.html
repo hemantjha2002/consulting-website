@@ -30,58 +30,69 @@
         </section>
         <section class="main_container">
             <section class="main_body">
-                <div class="icon_section">
+                <div class="nav_section">
                     <div class="icon_grid">
-                        <div class="col">
-                            <div class="icon_img">
-                                <a href="index.html"> <img src="Images/nav_logo.png" /></a>
-                            </div>
+
+                        <div class="icon_img">
+                            <a href="index.html"> <img src="Images/nav_logo.png" /></a>
                         </div>
-                        <div class="col">
-                            <div class="contact_btn_section">
-                                <div class="nav_section">
-                                    <div class="dropdown_section">
-                                        <a href="about.html"><button class="dropbtn1">
-                                                About
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </button></a>
-                                        <div class="dropdown_section-content">
-                                            <a href="about.html#our_team">Our Team</a>
-                                            <a href="about.html#about_us">About us</a>
-                                            <a href="about.html#vision_mission">Vision & Mission</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown_section">
-                                        <a href="service.html"><button class="dropbtn1">
-                                                Services
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </button></a>
-                                        <div class="dropdown_section-content">
-                                            <a href="service.html#tax_consulting">Tax Consulting</a>
-                                            <a href="service.html#asset_management">Asset management </a>
-                                            <a href="service.html#risk_safeguarding">Risk Safeguarding </a>
-                                            <a href="service.html#transition_strategy"> Transition Strategy </a>
-                                            <a href="service.html#legacy_consulting">Legacy Consulting</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown_section">
-                                        <a href="gallery.html"><button class="dropbtn1">
-                                                Gallery
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </button></a>
-                                        <div class="dropdown_section-content">
-                                            <a href="gallery.html#gallery_images">Photos</a>
-                                            <a href="gallery.html#gallery_video">Video</a>
-                                            <a href="gallery.html#news_offers">News</a>
-                                        </div>
+
+
+                        <ul class="nav_links">
+                            <li>
+                                <div class="dropdown_section">
+                                    <button class="dropbtn">
+                                        About
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown_section-content">
+                                        <a href="about.html#our_team">Our Team</a>
+                                        <a href="about.html#about_us">About us</a>
+                                        <a href="about.html#vision_mission">Vision & Mission</a>
                                     </div>
                                 </div>
-                                <a href="contact.html"><button class="Contact_btn">
+                            </li>
+                            <li>
+                                <div class="dropdown_section">
+                                    <button class="dropbtn">
+                                        Services
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown_section-content">
+                                        <a href="service.html#tax_consulting">Tax Consulting</a>
+                                        <a href="service.html#asset_management">Asset management </a>
+                                        <a href="service.html#risk_safeguarding">Risk Safeguarding </a>
+                                        <a href="service.html#transition_strategy"> Transition Strategy </a>
+                                        <a href="service.html#legacy_consulting">Legacy Consulting</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown_section">
+                                    <button class="dropbtn">
+                                        Gallery
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="dropdown_section-content">
+                                        <a href="gallery.html#gallery_images">Photos</a>
+                                        <!-- <a href="gallery.html#gallery_video">Video</a> -->
+                                        <a href="gallery.html#news_offers">News</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <a href="contact.html"><button class="Contact_btn">
                                         Contact Us
-                                        <i class="fa-solid fa-arrow-up-long"></i></button></a>
-                            </div>
+                                        <i class="fa-solid fa-arrow-up-long"></i></button></a></li>
+                        </ul>
+                        <div class="hamburger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
                         </div>
                     </div>
+
+
+
                 </div>
                 <hr />
                 <div class="hero_section">
@@ -91,7 +102,7 @@
                                 <div class="hero_text"> <strong>About Our</strong> 1CR Club <br><span
                                         class="hero_text_cursive"> Consulting</span></div>
                             </div>
-                            <div class="row" data-aos="fade-right">
+                            <div class="row hero_subtext" data-aos="fade-right">
                                 <p>Fiduciaries in Personal Wealth Matters.</p>
                             </div>
                             <div class="hero_btn_container">
@@ -120,7 +131,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="vision_mission_img_container" data-aos="fade-left">
+                        <div class="vision_mission_img_container">
                             <img class="vision_mission_img" src="./Images/vision_mission.jpg" alt="">
                         </div>
                     </div>
@@ -131,7 +142,7 @@
                             <img class="about_us_img" src="./Images/our_team_img.jpg" alt="">
                         </div>
                         <div class="about_us_description_container">
-                            <div class="about_us_description_head" data-aos="fade-left">
+                            <div class="about_us_description_head">
                                 <span> About </span> us
                             </div>
                             <div class="about_us_description">
@@ -160,23 +171,23 @@
                 </div>
                 <div class="our_team_section" id="our_team">
                     <div class="our_team_container">
-                        <div class="our_team_description_container" data-aos="fade-up">
+                        <div class="our_team_description_container">
                             <div class="our_team_description_head">
                                 Our <span> team </span>
                             </div>
                             <div class="our_team_description">
-                                <p>
+                                <p data-aos="fade-left">
                                     At 1CR Club, our finance consultants bring expertise and care to our valued clients.
                                     Choosing OUR team means partnering with professionals who are dedicated to your
                                     financial aspirations, success, and peace of mind.
                                 </p>
-                                <p>
+                                <p data-aos="fade-right">
                                     Client-Centric Approach: Recognizing the uniqueness of each financial journey, OUR
                                     team
                                     listens to understand your goals, challenges, and aspirations. We craft tailored
                                     solutions for relevant and impactful guidance.<br>
                                 </p>
-                                <p>
+                                <p data-aos="fade-left">
                                     Your financial success is our priority. Choose OUR team at 1CR Club for dedicated
                                     expertise and personalized care on your financial path.
                                 </p>
@@ -217,8 +228,8 @@
                 </div>
 
                 <div class="contact_us_section">
-                    <div class="contact_us_head" data-aos="fade-up">
-                        Do you have Questions?
+                    <div class="contact_us_head">
+                        Do you have <span>Questions</span>?
                     </div>
                     <div class="contact_us_subhead" data-aos="fade-up">
                         Feel free to ask, contact us today and we will reach out for a FREE Consultation call.
@@ -234,32 +245,30 @@
     </main>
     <footer>
         <div class="footer_section">
-            <div class="container ">
+            <div class="footer_container ">
 
-                <div class="row">
-                    <div class="col-4">
-                        <div class="container ">
-                            <div class="row ">
+                <div class="footer_menu_row">
+                    <div class="footer_menu_col">
+                        <div class="footer_text_container ">
+                            <div class="footer_text_row ">
                                 <div class="footer_logo ">
-
                                     <a href="index.html"> <img src="Images/main_logo.png" alt="Logo"></a>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="footer_text_row">
                                 <div class="footer_sub_head">1CR Club is a national personal wealth firm that
                                     begins with taxes at the core
                                     of its strategy.</div>
                             </div>
-                            <div class="row">
+                            <div class="footer_text_row">
                                 <div class="footer_sub_contact">
                                     <a href="mailto:naisha1crclub@gmail.com" class="footer_email"><strong
-                                            class="a">Email
-                                            Us!</strong></a>
+                                            class="a">Email Us!</strong></a>
                                     <span class="footer_call"><strong>Call Us:</strong> <a href="tel:+919650426806">+91
                                             9650426806</a></span>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="footer_text_row">
 
                                 <div class="footer_btn">
                                     <div class="share_icon_section">
@@ -280,7 +289,7 @@
                         </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="footer_menu_col hide_footer">
                         <div class="footer_nav_list">
                             <ul>
                                 <li><a href="service.html#tax_consulting">Tax Consulting</a></li>
@@ -291,7 +300,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="footer_menu_col hide_footer">
                         <div class="footer_nav_list">
                             <ul>
                                 <li><a href="about.html">About</a></li>
@@ -303,15 +312,16 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
+            <div class="footer_container">
+                <div class="footer_terms_row">
+                    <div class="footer_terms_col">
                         <div class="condition">
                             Copyright © <strong>NAISHA'S 1CR CLUB</strong>. All rights reserved.
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="footer_terms_col">
                         <div class="terms">
                             <a href="terms&condition.html">Terms of Use</a> | <a href="privacy.html"> Privacy
                                 Policy</a> | <a href="Disclosures.html">Disclosures</a>
@@ -320,9 +330,9 @@
                 </div>
             </div>
         </div>
-        </div>
 
     </footer>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
