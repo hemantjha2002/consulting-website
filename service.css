@@ -437,6 +437,11 @@ body {
 }
 
 @media screen and (max-width:450px) {
+
+    button {
+        font-weight: 500;
+    }
+
     .top_head {
         font-size: 14px;
         height: 40px;
@@ -472,6 +477,7 @@ body {
 
     .hero_section_text_container p {
         margin-top: 20px;
+        color: #fff;
     }
 
     .hero_text {
@@ -523,7 +529,7 @@ body {
 
     .service_info_description_head {
         width: 100%;
-        padding: 20px;
+        padding: 0px 20px;
         font-size: 25px;
         font-weight: bolder;
         text-transform: uppercase;
@@ -603,14 +609,7 @@ body {
         padding: 10px;
     }
 
-    p {
-        text-align: center;
-        color: #404040;
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 0.5px;
-        margin-bottom: 16px;
-    }
+
 
     /* ----------------------------------contact_section------------------------------------------------------------------- */
 
@@ -671,7 +670,6 @@ body {
         color: #fff;
         background: #0ba584;
     }
-    button {
-        font-weight: 500;
-      }
+
+
 }
