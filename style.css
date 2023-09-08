@@ -205,14 +205,15 @@ body {
 }
 
 .feature_service_section {
-  margin-top: 20px;
+
   width: 100%;
   height: 100%;
-  padding: 5px 10px;
+  padding: 5px 100px;
   overflow: hidden;
 }
 
 .feature_service_card_text {
+  width: 100%;
   height: auto;
   font-size: 13px;
   padding: 10px;
@@ -233,9 +234,8 @@ body {
 }
 
 .head_2 {
-  margin-top: 20px;
   color: #000;
-  font-size: 37px;
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -246,7 +246,6 @@ body {
   font-weight: 400;
   line-height: 28px;
   color: #000;
-  margin-top: 20px;
 }
 
 .card_sub_head span {
@@ -255,7 +254,7 @@ body {
 
 .card_img {
   border-radius: 10px !important;
-  width: 100%;
+  width: 300px;
   margin: 20px 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -265,7 +264,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 /* --------------------------------------------------------------rolling section------------------------------------------------ */
@@ -345,15 +344,16 @@ body {
 
 .service_head {
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 5px;
+  padding: 0 100px;
   color: #000000;
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 700;
 }
 
 .service_subhead_conatiner {
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
   display: grid;
   grid-template-columns: 80% 20%;
   justify-content: flex-start;
@@ -361,6 +361,7 @@ body {
 }
 
 .service_subhead {
+  padding: 0 100px;
   color: #44494a;
   font-size: 13px;
   text-transform: uppercase;
@@ -372,6 +373,7 @@ body {
   padding: 10px 15px;
   text-transform: uppercase;
   color: #000;
+  font-weight: 500;
   letter-spacing: 1px;
   line-height: 15px;
   border: 2px solid rgba(121, 121, 121, 0.897);
@@ -393,7 +395,7 @@ body {
 .service_main_container_1 {
   width: 100%;
   height: 100%;
-  margin: 40px auto;
+  margin: auto;
   padding: 10px 10px;
 }
 
@@ -401,7 +403,7 @@ body {
   width: 80%;
   height: 100%;
   display: flex;
-  margin: 30px auto;
+  margin: 5px auto;
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -512,7 +514,7 @@ body {
   background: transparent;
   transition: all 0.4s ease-in-out;
   position: relative;
-  bottom: -40px;
+  bottom: -60px;
   left: 130px;
 }
 
@@ -640,19 +642,19 @@ body {
 
 .client_head_container {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .client_title {
   width: 100%;
-  padding: 20px;
-  font-size: 40px;
+  padding: 0 20px;
+  font-size: 35px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -666,7 +668,7 @@ body {
 }
 
 .client_subtitle {
-  margin: 30px;
+  margin: 5px 30px;
 }
 
 .client_name {
@@ -846,7 +848,7 @@ body {
 /* ------------------------------------------------------------------------------reach out section--------------------------------------------------- */
 .reachout_section {
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-color: #1c292c;
   display: flex;
   justify-content: center;
@@ -856,7 +858,7 @@ body {
 
 .reachout_img {
   width: 80%;
-  height: 500px;
+  height: 400px;
   position: relative;
   top: -150px;
   z-index: 60;
@@ -879,9 +881,6 @@ body {
   padding: 10px;
   font-size: 50px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
 }
 
@@ -935,7 +934,7 @@ body {
 .help_container {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 100px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -945,17 +944,17 @@ body {
 
 .help_head_container {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .help_title {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   font-size: 40px;
   font-weight: bold;
   display: flex;
@@ -977,12 +976,12 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
+  align-items: center;
 }
 
 .help_body_container {
-  width: 700px;
-  padding: 20px 30px;
-  margin-bottom: 50px;
+  width: 600px;
+  padding: 10px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -991,12 +990,12 @@ body {
 }
 
 .help_body_head {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .help_body_question {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   font-style: italic;
   color: #0ba584;
@@ -1010,7 +1009,7 @@ body {
 
 .help_body_btn {
   width: 100%;
-  padding: 30px 10px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
@@ -1044,7 +1043,7 @@ body {
 .help_faq_section {
   width: 100%;
   height: 100%;
-  padding: 30px 50px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1054,7 +1053,6 @@ body {
 
 .help_faq_container {
   width: 100%;
-  min-height: 670px;
   border: 1px solid white;
   border-radius: 20px;
   padding: 10px 30px;
@@ -1592,6 +1590,7 @@ body {
   .service_head {
     text-transform: uppercase;
     margin-top: 20px;
+    padding: 0 10px;
     color: #000000;
     font-size: 27px;
     font-weight: 700;
@@ -1608,6 +1607,7 @@ body {
   }
 
   .service_subhead {
+    padding: 0;
     width: 100%;
     color: #44494a;
     font-size: 12px;
@@ -1887,6 +1887,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 0px;
+    text-align: center;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -1911,6 +1912,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     display: inline;
+    text-align: left;
     text-transform: uppercase;
   }
 
@@ -1961,7 +1963,7 @@ body {
 
   .help_body_btn {
     width: 100%;
-    padding: 30px 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
   }
