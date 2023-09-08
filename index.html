@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <title>Home Page | 1CR Club</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="footer.css">
@@ -148,6 +149,9 @@
               <li> <a href="contact.html"><button class="Contact_btn">
                     Contact Us
                     <i class="fa-solid fa-arrow-up-long"></i></button></a></li>
+                    <li> <button type="button" class="get_in_touch_btn" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Get In Touch <i class="fa-solid fa-arrow-up-long"></i></button></li>
             </ul>
             <div class="hamburger">
               <div class="line1"></div>
@@ -475,87 +479,373 @@
           </div>
         </div>
         <!-- <hr> -->
-        <div class="client_section">
 
+
+
+        <!-- Styles -->
+
+        <!-- Script -->
+
+
+        <div class="client_section">
+          <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
           <div class="client_head_container">
             <div class="client_title">CLIENT SATISFACTION,<span>&nbsp;OUR REPUTATION </span></div>
             <div class="client_subtitle">Testimonials from trusted consumer of our service</div>
 
           </div>
-
-
           <div class="carousel_background">
-
             <div class="carousel__container">
-              <div class="carousel__item">
-                <div class="carousel_review">
-                  <div class="carousel_rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+
+              <div class="swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club's finance consulting surpassed my expectations. Their adept team meticulously analyzed
+                        my
+                        financial portfolio, offering personalized strategies that optimized my investments. Their
+                        insightful guidance has yielded remarkable results, proving their proficiency."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_2.jpg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Rajesh Sharma</div>
+                          <div class="client_position">Senior Marketing Manager</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="review_description">
-                    "1CR Club's finance consulting surpassed my expectations. Their adept team meticulously analyzed my
-                    financial portfolio, offering personalized strategies that optimized my investments. Their
-                    insightful guidance has yielded remarkable results, proving their proficiency."
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "Engaging 1CR Club was a game-changer for my financial stability. Their clear communication and
+                        tailored approach eased my concerns. They devised a holistic plan considering my short and
+                        long-term
+                        goals. Their consistent support reassures me that I made the right choice."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_3.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Priya Patel</div>
+                          <div class="client_position">Operations Coordinator </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="client_details_container">
-                    <div class="client_img"><img src="Images/client_img_2.jpg" alt="c_img"></div>
-                    <div class="client_detail">
-                      <div class="client_name"> Rajesh Sharma</div>
-                      <div class="client_position">Senior Marketing Manager</div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club is an exceptional finance consulting firm! Their team's expertise helped me navigate
+                        complex financial decisions with ease. Their personalized approach and commitment to client
+                        success truly set them apart."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"> <img src="Images/client_img_1.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Vikram Singh</div>
+                          <div class="client_position">Research and Development Engineer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "I can't thank 1CR Club enough for their exceptional financial guidance. Their team's deep
+                        knowledge and strategic thinking have significantly improved my investment portfolio's
+                        performance. I trust them implicitly and appreciate their dedication to achieving my financial
+                        goals"
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_4.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Aman Verma</div>
+                          <div class="client_position">Chief Technology Officer (CTO)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club stands out as a top-notch finance consulting firm. Their ability to simplify complex
+                        financial concepts and provide actionable recommendations has been a game-changer for me. I'm
+                        truly grateful for their support in securing my financial future."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_5.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Anika Kapoor</div>
+                          <div class="client_position">Chief Financial Officer (CFO) </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club's finance consulting surpassed my expectations. Their adept team meticulously analyzed
+                        my
+                        financial portfolio, offering personalized strategies that optimized my investments. Their
+                        insightful guidance has yielded remarkable results, proving their proficiency."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_2.jpg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Rajesh Sharma</div>
+                          <div class="client_position">Senior Marketing Manager</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "Engaging 1CR Club was a game-changer for my financial stability. Their clear communication and
+                        tailored approach eased my concerns. They devised a holistic plan considering my short and
+                        long-term
+                        goals. Their consistent support reassures me that I made the right choice."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_3.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Priya Patel</div>
+                          <div class="client_position">Operations Coordinator </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club is an exceptional finance consulting firm! Their team's expertise helped me navigate
+                        complex financial decisions with ease. Their personalized approach and commitment to client
+                        success truly set them apart."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"> <img src="Images/client_img_1.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Vikram Singh</div>
+                          <div class="client_position">Research and Development Engineer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "I can't thank 1CR Club enough for their exceptional financial guidance. Their team's deep
+                        knowledge and strategic thinking have significantly improved my investment portfolio's
+                        performance. I trust them implicitly and appreciate their dedication to achieving my financial
+                        goals"
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_4.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Aman Verma</div>
+                          <div class="client_position">Chief Technology Officer (CTO)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club stands out as a top-notch finance consulting firm. Their ability to simplify complex
+                        financial concepts and provide actionable recommendations has been a game-changer for me. I'm
+                        truly grateful for their support in securing my financial future."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_5.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Anika Kapoor</div>
+                          <div class="client_position">Chief Financial Officer (CFO) </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club's finance consulting surpassed my expectations. Their adept team meticulously analyzed
+                        my
+                        financial portfolio, offering personalized strategies that optimized my investments. Their
+                        insightful guidance has yielded remarkable results, proving their proficiency."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_2.jpg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Rajesh Sharma</div>
+                          <div class="client_position">Senior Marketing Manager</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "Engaging 1CR Club was a game-changer for my financial stability. Their clear communication and
+                        tailored approach eased my concerns. They devised a holistic plan considering my short and
+                        long-term
+                        goals. Their consistent support reassures me that I made the right choice."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_3.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Priya Patel</div>
+                          <div class="client_position">Operations Coordinator </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club is an exceptional finance consulting firm! Their team's expertise helped me navigate
+                        complex financial decisions with ease. Their personalized approach and commitment to client
+                        success truly set them apart."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"> <img src="Images/client_img_1.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Vikram Singh</div>
+                          <div class="client_position">Research and Development Engineer</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review_description">
+                        "I can't thank 1CR Club enough for their exceptional financial guidance. Their team's deep
+                        knowledge and strategic thinking have significantly improved my investment portfolio's
+                        performance. I trust them implicitly and appreciate their dedication to achieving my financial
+                        goals"
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_4.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name"> Aman Verma</div>
+                          <div class="client_position">Chief Technology Officer (CTO)</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel_review">
+                      <div class="carousel_rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                      </div>
+                      <div class="review_description">
+                        "1CR Club stands out as a top-notch finance consulting firm. Their ability to simplify complex
+                        financial concepts and provide actionable recommendations has been a game-changer for me. I'm
+                        truly grateful for their support in securing my financial future."
+                      </div>
+                      <div class="client_details_container">
+                        <div class="client_img"><img src="Images/client_img_5.jpeg" alt="c_img"></div>
+                        <div class="client_detail">
+                          <div class="client_name">Anika Kapoor</div>
+                          <div class="client_position">Chief Financial Officer (CFO) </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="pagination"></div>
+
               </div>
-              <div class="carousel__item">
-                <div class="carousel_review">
-                  <div class="carousel_rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half"></i>
-                  </div>
-                  <div class="review_description">
-                    "Engaging 1CR Club was a game-changer for my financial stability. Their clear communication and
-                    tailored approach eased my concerns. They devised a holistic plan considering my short and long-term
-                    goals. Their consistent support reassures me that I made the right choice."
-                  </div>
-                  <div class="client_details_container">
-                    <div class="client_img"><img src="Images/client_img_3.jpeg" alt="c_img"></div>
-                    <div class="client_detail">
-                      <div class="client_name"> Priya Patel</div>
-                      <div class="client_position">Operations Coordinator </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel__item">
-                <div class="carousel_review">
-                  <div class="carousel_rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div class="review_description">
-                    "1CR Club's financial consulting is unparalleled. They delved into my financial aspirations,
-                    providing innovative pathways to achieve them. Their proactive recommendations and deep industry
-                    understanding are invaluable. With 1CR Club's guidance, I now navigate the financial landscape with
-                    confidence."
-                  </div>
-                  <div class="client_details_container">
-                    <div class="client_img"> <img src="Images/client_img_1.jpeg" alt="c_img"></div>
-                    <div class="client_detail">
-                      <div class="client_name"> Hemant Jha</div>
-                      <div class="client_position">Software Developer</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <script src="carousel.js"></script>
             </div>
             <img class="background_img" src="Images/earth.png" alt="earth">
 
@@ -619,7 +909,7 @@
                     </div>
                     <div class="accordion1-item">
                       <div class="accordion1-item-header">
-                        How experienced is the team at 1CR Club?
+                        How experienced is the team at 1CR <br> Club?
                       </div>
                       <div class="accordion1-item-body">
                         <div class="accordion1-item-body-content">

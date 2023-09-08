@@ -50,14 +50,10 @@ body {
     border-radius: 20px;
     background-color: #fff;
 }
-
-/* ----------------------------------------------------------icon section--------------------------------------------- */
-
 /* -------------------------------------------------------------------------hero section----------------------------------------------------------------- */
 .hero_section {
     width: 100%;
     height: auto;
-    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -78,7 +74,7 @@ body {
     padding: 20px;
     color: #fff;
     display: grid;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     justify-content: center;
     align-items: flex-start;
     text-transform: uppercase;
@@ -94,7 +90,7 @@ body {
 }
 
 .hero_text {
-    margin-top: 100px;
+    margin-top: 60px;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     font-weight: 100;
@@ -166,7 +162,7 @@ body {
 /* -----------------------------------------------------------button section---------------------------------------- */
 .service_btn_container {
     width: 100%;
-    height: 200px;
+    height: 130px;
     padding: 0 20px;
     display: flex;
     justify-content: center;
@@ -455,13 +451,14 @@ body {
 .gallery_news_section {
     width: 100%;
     height: 100%;
-    padding: 100px 20px;
+    padding: 20px;
     background-color: #1c292c;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: .3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .new_section_title {

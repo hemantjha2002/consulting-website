@@ -13,7 +13,7 @@ footer {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px 100px;
+    padding: 10px 100px;
 }
 
 .footer_menu_row {
@@ -147,7 +147,7 @@ footer {
 }
 
 .footer_nav_list li {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     letter-spacing: 1px;
     list-style: none;
@@ -197,7 +197,7 @@ footer {
 
 .terms {
     color: #000000;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-family: "Lato", arial, sans-serif;

@@ -90,15 +90,16 @@ body {
 }
 
 .hero_section_text_container p {
-    margin-top: 40px;
-
+    margin-top: 30px;
+    padding-left: 0;
 }
 
 .hero_text {
-    margin-top: 100px;
+    margin-top: 80px;
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     font-weight: 100;
+    padding-left: 0;
     line-height: 40px;
 }
 
@@ -137,7 +138,7 @@ body {
 
 .hero_btn_container {
     display: flex;
-    margin: 20px 100px;
+    margin: 10px 100px;
 }
 
 .hero_section_btn1 {
@@ -170,7 +171,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    padding: 100px 10px;
+    padding: 10px 100px;
     overflow: hidden;
 }
 
@@ -178,7 +179,6 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    padding-top: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -222,7 +222,6 @@ body {
 .circle_feature_section {
     height: auto;
     position: relative;
-    top: -50px;
     border-radius: 20px;
 }
 
@@ -370,7 +369,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: 40% 60%;
-    padding: 100px 10px;
+    padding: 10px 100px;
 }
 
 .about_us_img_container {
@@ -433,7 +432,7 @@ body {
     display: grid;
     overflow: hidden;
     grid-template-columns: 40% 60%;
-    padding: 100px 10px;
+    padding: 20px 100px;
 }
 
 .vision_mission_img_container {
@@ -485,9 +484,10 @@ body {
 .contact_us_section {
     width: 100%;
     height: 100%;
-    padding: 50px;
+    padding: 50px 100px;
     background-color: #1c292c;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .contact_us_head {
@@ -508,7 +508,8 @@ body {
 }
 
 .contact_us_subhead {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     color: #fff;
 }
@@ -516,7 +517,7 @@ body {
 
 .contact_us_btn_container {
     width: 100%;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
 }
@@ -532,7 +533,6 @@ body {
     background-color: #ffffff;
     border: 1px solid transparent;
     border-radius: 40px;
-    margin-top: 50px;
     transition: all 0.3s ease 0s;
 }
 
