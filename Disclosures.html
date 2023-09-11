@@ -2,311 +2,393 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <title>Discloser | 1CR Club</title>
-    <link rel="stylesheet" href="Disclosures.css" />
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="nav.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=4.0, user-scalable=yes" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <title>Discloser | 1CR Club</title>
+  <link rel="stylesheet" href="Disclosures.css" />
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-    <main>
-        <section class="top_head">
-            <div class="top_head_text_container">
-                <div class="top_head_text">
-                    Manage <strong>YOUR WEALTH </strong> smartly?
-                    <i><a href="contact.html">Contact Us</a></i>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">REQUEST A CALL</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="contact_form_section">
+            <div class="contact_form_container">
+              <form class="form" action="appointment.php" method="POST">
+                <div class="flex">
+                  <label>
+                    <input type="text" id="firstName" name="firstName" required class="input">
+                    <span>first name</span>
+                  </label>
+
+                  <label>
+                    <input id="lastName" name="lastName" required placeholder="" type="text" class="input">
+                    <span>last name</span>
+                  </label>
                 </div>
+
+                <label>
+                  <input id="contact" name="contact" required type="number" placeholder="" class="input">
+                  <span>contact number</span>
+                </label>
+
+                <label>
+                  <input type="email" id="email" name="email" required class="input">
+                  <span>email</span>
+                </label>
+
+                <label>
+                  <select id="service" name="service" required class="input">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Financial Planning">Financial Planning</option>
+                    <option value="Investment Advisory">Investment Advisory</option>
+                    <option value="Tax Strategies">Tax Strategies</option>
+                    <!-- Add more service options here -->
+                  </select>
+                </label>
+
+
+                <div class="modal_btn_container">
+                  <button class="modal_btn1" value="Submit" type="submit"> submit <i
+                      class="fa-solid fa-arrow-up-long"></i>
+                  </button>
+                  <button type="reset" class="modal_btn2">Reset</button>
+                </div>
+              </form>
             </div>
-        </section>
-        <section class="main_container">
-            <section class="main_body">
-              <div class="nav_section">
-                <div class="icon_grid">
-      
-                  <div class="icon_img">
-                    <a href="index.html"> <img src="Images/nav_logo.png" /></a>
-                  </div>
-      
-      
-                  <ul class="nav_links">
-                    <li>
-                      <div class="dropdown_section">
-                        <button class="dropbtn">
-                          About
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown_section-content">
-                          <a href="about.html#our_team">Our Team</a>
-                          <a href="about.html#about_us">About us</a>
-                          <a href="about.html#vision_mission">Vision & Mission</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown_section">
-                        <button class="dropbtn">
-                          Services
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown_section-content">
-                          <a href="service.html#tax_consulting">Tax Consulting</a>
-                          <a href="service.html#asset_management">Asset management </a>
-                          <a href="service.html#risk_safeguarding">Risk Safeguarding </a>
-                          <a href="service.html#transition_strategy"> Transition Strategy </a>
-                          <a href="service.html#legacy_consulting">Legacy Consulting</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="dropdown_section">
-                        <button class="dropbtn">
-                          Gallery
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown_section-content">
-                          <a href="gallery.html#gallery_images">Photos</a>
-                          <!-- <a href="gallery.html#gallery_video">Video</a> -->
-                          <a href="gallery.html#news_offers">News</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li> <a href="contact.html"><button class="Contact_btn">
-                          Contact Us
-                          <i class="fa-solid fa-arrow-up-long"></i></button></a></li>
-                          <li> <button type="button" class="get_in_touch_btn" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Get In Touch <i class="fa-solid fa-arrow-up-long"></i></button></li>
-                  </ul>
-                  <div class="hamburger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section class="top_head">
+      <div class="top_head_text_container">
+        <div class="top_head_text">
+          Manage <strong>YOUR WEALTH </strong> smartly?
+          <i><a href="contact.html">Contact Us</a></i>
+        </div>
+      </div>
+    </section>
+    <section class="main_container">
+      <section class="main_body">
+        <div class="nav_section">
+          <div class="icon_grid">
+
+            <div class="icon_img">
+              <a href="index.html"> <img src="Images/nav_logo.png" /></a>
+            </div>
+
+
+            <ul class="nav_links">
+              <li>
+                <div class="dropdown_section">
+                  <button class="dropbtn">
+                    About
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown_section-content">
+                    <a href="about.html#our_team">Our Team</a>
+                    <a href="about.html#about_us">About us</a>
+                    <a href="about.html#vision_mission">Vision & Mission</a>
                   </div>
                 </div>
-      
-      
-      
+              </li>
+              <li>
+                <div class="dropdown_section">
+                  <button class="dropbtn">
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown_section-content">
+                    <a href="service.html#tax_consulting">Tax Consulting</a>
+                    <a href="service.html#asset_management">Asset management </a>
+                    <a href="service.html#risk_safeguarding">Risk Safeguarding </a>
+                    <a href="service.html#transition_strategy"> Transition Strategy </a>
+                    <a href="service.html#legacy_consulting">Legacy Consulting</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown_section">
+                  <button class="dropbtn">
+                    Gallery
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                  <div class="dropdown_section-content">
+                    <a href="gallery.html#gallery_images">Photos</a>
+                    <!-- <a href="gallery.html#gallery_video">Video</a> -->
+                    <a href="gallery.html#news_offers">News</a>
+                  </div>
+                </div>
+              </li>
+              <li> <a href="contact.html"><button class="Contact_btn">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-up-long"></i></button></a></li>
+              <li> <button type="button" class="get_in_touch_btn" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Get In Touch <i class="fa-solid fa-arrow-up-long"></i></button></li>
+            </ul>
+            <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <hr>
+        <div class="Disclosures_section">
+          <div class="Disclosures_section_container">
+            <div class="Disclosures_head">Disclosures</div>
+            <div class="Disclosures_description_container">
+              <div class="Disclosures_description">
+                <p>NAISHA’S 1CR CLUB CONSULTING SERVICES PVT. LTD. is an autonomous financial services
+                  ecosystem that offers personalized tax
+                  strategies, legacy planning, retirement income planning, business exit planning,
+                  investment guidance, and insurance solutions tailored to the specific needs and
+                  goals of
+                  its clients.
+                </p>
+                <p>
+                  Investment advisory services are exclusively provided by duly registered individuals
+                  through these company, an investment advisor registered in the
+                  New Delhi. Being registered as an investment advisor does not imply
+                  a
+                  certain level of expertise or training. The information presented here should not be
+                  construed as a solicitation to offer or sell advisory services to residents of any
+                  State
+                  other than Missouri or California, or where otherwise legally permissible.
+                </p>
+                <p>
+                  All investments carry risks, including the potential loss of principal. No
+                  investment
+                  strategy can guarantee a profit or shield against losses in periods of declining
+                  values.
+                  Past performance is not indicative of future results. It's important not to invest
+                  more
+                  than you can afford to lose. The information on this website does not constitute an
+                  offer to sell or solicit the purchase of securities or insurance products.
+                </p>
+                <p>
+                  Any mention of protection benefits, safety, security, or consistent and reliable
+                  income
+                  on this website pertains solely to fixed insurance products. Such references do not
+                  apply to securities or investment advisory products. Annuity guarantees are
+                  supported by
+                  the financial strength and claims-paying ability of the issuing insurance company.
+                  Annuities are insurance products subject to fees, surrender charges, and holding
+                  periods
+                  that vary by insurance company. Annuities are not FDIC insured.
+                </p>
+                <p>
+                  The information on this website and the materials obtained from it are provided by
+                  third
+                  parties and have been sourced from believed-to-be reliable sources. However,
+                  accuracy
+                  and completeness cannot be guaranteed. The information is presented for
+                  informational,
+                  illustrative, conceptual, and educational purposes only and is not a solicitation to
+                  buy
+                  or sell anything. It should not be the sole basis for financial decisions and is not
+                  intended as advice tailored to individual situations. This information is provided
+                  to
+                  explain a concept and is provided "as is" without any warranty. It's not applicable
+                  to
+                  specific investments but rather serves to understand a general investment concept.
+                  It's
+                  compiled from publicly available sources and market/exchange information, and there
+                  is
+                  no guarantee of its thoroughness, correctness, completeness, effectiveness, or
+                  freedom
+                  from typographical errors, inaccuracies, or mistakes that may occur.
+                </p>
+                <p>
+                  This information is neither an offer nor a solicitation to buy or sell any security,
+                  nor
+                  is it an endorsement, recommendation, or sponsorship of any security, fund, or
+                  company.
+                  All expressed or implied representations and warranties, including implied
+                  warranties of
+                  fitness for a particular purpose, are disclaimed. Users of this information assume
+                  all
+                  risks.
+                </p>
+                <p>
+                  Unauthorized use, distribution, reproduction, or sharing in part or in whole through
+                  photocopying, email, data retrieval systems, or any other means is strictly
+                  prohibited.
+                </p>
+                <p>
+                  The company is
+                  under
+                  the shared ownership of Mr. Nikhil Mittal.
+                </p>
+                <p>Image Credits:All the images and their attribution are present to view <a href="attribution.html">
+                    click Here </a></p>
+                <p>
+                  Insurance products are sold based on the best interest standard at both state and
+                  insurance carrier levels. This means that product recommendations must align with
+                  the
+                  financial needs and objectives of the client. Investment advisory services are
+                  required
+                  to adhere to the fiduciary standard, ensuring that the advice provided is in the
+                  best
+                  interest of the client and any conflicts of interest are fully disclosed.
+                </p>
               </div>
-                <hr>
-                <div class="Disclosures_section">
-                    <div class="Disclosures_section_container">
-                        <div class="Disclosures_head">Disclosures</div>
-                        <div class="Disclosures_description_container">
-                            <div class="Disclosures_description">
-                                <p>NAISHA’S 1CR CLUB CONSULTING SERVICES PVT. LTD. is an autonomous financial services
-                                    ecosystem that offers personalized tax
-                                    strategies, legacy planning, retirement income planning, business exit planning,
-                                    investment guidance, and insurance solutions tailored to the specific needs and
-                                    goals of
-                                    its clients.
-                                </p>
-                                <p>
-                                    Investment advisory services are exclusively provided by duly registered individuals
-                                    through these company, an investment advisor registered in the
-                                    New Delhi. Being registered as an investment advisor does not imply
-                                    a
-                                    certain level of expertise or training. The information presented here should not be
-                                    construed as a solicitation to offer or sell advisory services to residents of any
-                                    State
-                                    other than Missouri or California, or where otherwise legally permissible.
-                                </p>
-                                <p>
-                                    All investments carry risks, including the potential loss of principal. No
-                                    investment
-                                    strategy can guarantee a profit or shield against losses in periods of declining
-                                    values.
-                                    Past performance is not indicative of future results. It's important not to invest
-                                    more
-                                    than you can afford to lose. The information on this website does not constitute an
-                                    offer to sell or solicit the purchase of securities or insurance products.
-                                </p>
-                                <p>
-                                    Any mention of protection benefits, safety, security, or consistent and reliable
-                                    income
-                                    on this website pertains solely to fixed insurance products. Such references do not
-                                    apply to securities or investment advisory products. Annuity guarantees are
-                                    supported by
-                                    the financial strength and claims-paying ability of the issuing insurance company.
-                                    Annuities are insurance products subject to fees, surrender charges, and holding
-                                    periods
-                                    that vary by insurance company. Annuities are not FDIC insured.
-                                </p>
-                                <p>
-                                    The information on this website and the materials obtained from it are provided by
-                                    third
-                                    parties and have been sourced from believed-to-be reliable sources. However,
-                                    accuracy
-                                    and completeness cannot be guaranteed. The information is presented for
-                                    informational,
-                                    illustrative, conceptual, and educational purposes only and is not a solicitation to
-                                    buy
-                                    or sell anything. It should not be the sole basis for financial decisions and is not
-                                    intended as advice tailored to individual situations. This information is provided
-                                    to
-                                    explain a concept and is provided "as is" without any warranty. It's not applicable
-                                    to
-                                    specific investments but rather serves to understand a general investment concept.
-                                    It's
-                                    compiled from publicly available sources and market/exchange information, and there
-                                    is
-                                    no guarantee of its thoroughness, correctness, completeness, effectiveness, or
-                                    freedom
-                                    from typographical errors, inaccuracies, or mistakes that may occur.
-                                </p>
-                                <p>
-                                    This information is neither an offer nor a solicitation to buy or sell any security,
-                                    nor
-                                    is it an endorsement, recommendation, or sponsorship of any security, fund, or
-                                    company.
-                                    All expressed or implied representations and warranties, including implied
-                                    warranties of
-                                    fitness for a particular purpose, are disclaimed. Users of this information assume
-                                    all
-                                    risks.
-                                </p>
-                                <p>
-                                    Unauthorized use, distribution, reproduction, or sharing in part or in whole through
-                                    photocopying, email, data retrieval systems, or any other means is strictly
-                                    prohibited.
-                                </p>
-                                <p>
-                                    The company is
-                                    under
-                                    the shared ownership of Mr. Nikhil Mittal.
-                                </p>
-                                <p>Image Credits:All the images and their attribution are present to view <a
-                                        href="attribution.html">
-                                        click Here </a></p>
-                                <p>
-                                    Insurance products are sold based on the best interest standard at both state and
-                                    insurance carrier levels. This means that product recommendations must align with
-                                    the
-                                    financial needs and objectives of the client. Investment advisory services are
-                                    required
-                                    to adhere to the fiduciary standard, ensuring that the advice provided is in the
-                                    best
-                                    interest of the client and any conflicts of interest are fully disclosed.
-                                </p>
-                            </div>
-                        </div>
+            </div>
 
-                    </div>
-                </div>
-                <hr>
-            </section>
-        </section>
+          </div>
+        </div>
+        <hr>
+        <div class="floating_modal">
+          <div class="floating_modal_container">
+            <div class="floating_modal_head">
+              Request a callback from our consultant
+            </div>
+            <div class="floating_modal_input_container">
 
-    </main>
-    <footer>
-        <div class="footer_section">
-          <div class="footer_container ">
-    
-            <div class="footer_menu_row">
-              <div class="footer_menu_col">
-                <div class="footer_text_container ">
-                  <!-- <div class="footer_text_row ">
+              <label data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enter Your Mobile Number</label>
+              <button class="floating_modal_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Connect With Us
+                At Free Call</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="floating_contact_btn_container">
+          <a
+            href="https://api.whatsapp.com/send/?phone=9650426806&text=Talk+with+Health+Advisor&type=phone_number&app_absent=0">
+            <div class="floating_contact_btn">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer_section">
+      <div class="footer_container ">
+
+        <div class="footer_menu_row">
+          <div class="footer_menu_col">
+            <div class="footer_text_container ">
+              <!-- <div class="footer_text_row ">
                     <div class="footer_logo ">
                       <a href="index.html"> <img src="Images/main_logo.png" alt="Logo"></a>
                     </div>
                   </div> -->
-                  <div class="footer_text_row">
-                    <div class="footer_sub_head">
-                      <div class="floated_footer_logo">
-                        <a href="index.html"> <img src="Images/main_logo.png" alt="Logo"></a>
-                      </div>1CR Club is a national personal wealth firm that
-                      begins with taxes at the core
-                      of its strategy.
+              <div class="footer_text_row">
+                <div class="footer_sub_head">
+                  <div class="floated_footer_logo">
+                    <a href="index.html"> <img src="Images/main_logo.png" alt="Logo"></a>
+                  </div>1CR Club is a national personal wealth firm that
+                  begins with taxes at the core
+                  of its strategy.
+                </div>
+              </div>
+              <div class="footer_text_row">
+                <div class="footer_sub_contact">
+                  <a href="mailto:naisha1CRclub@gmail.com" class="footer_email"><strong class="a">Email Us!</strong></a>
+                  <span class="footer_call"><strong>Call Us:</strong> <a href="tel:+919650426806">+91
+                      9650426806</a></span>
+                </div>
+              </div>
+              <div class="footer_text_row">
+
+                <div class="footer_btn">
+                  <div class="share_icon_section">
+                    <div class="share_icon">
+                      <i class="fa-brands fa-facebook fa-xl"></i>
+                    </div>
+                    <div class="share_icon">
+                      <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </div>
+                    <div class="share_icon">
+                      <i class="fa-brands fa-x-twitter fa-xl"></i>
                     </div>
                   </div>
-                  <div class="footer_text_row">
-                    <div class="footer_sub_contact">
-                      <a href="mailto:naisha1CRclub@gmail.com" class="footer_email"><strong class="a">Email Us!</strong></a>
-                      <span class="footer_call"><strong>Call Us:</strong> <a href="tel:+919650426806">+91
-                          9650426806</a></span>
-                    </div>
-                  </div>
-                  <div class="footer_text_row">
-    
-                    <div class="footer_btn">
-                      <div class="share_icon_section">
-                        <div class="share_icon">
-                          <i class="fa-brands fa-facebook fa-xl"></i>
-                        </div>
-                        <div class="share_icon">
-                          <i class="fa-brands fa-linkedin fa-xl"></i>
-                        </div>
-                        <div class="share_icon">
-                          <i class="fa-brands fa-x-twitter fa-xl"></i>
-                        </div>
-                      </div>
-                    </div>
-    
-                  </div>
-    
                 </div>
-    
+
               </div>
-              <div class="footer_menu_col hide_footer">
-                <div class="footer_nav_list">
-                  <ul>
-                    <li><a href="service.html#tax_consulting">Tax Consulting</a></li>
-                    <li><a href="service.html#asset_management">Asset management </a></li>
-                    <li><a href="service.html#risk_safeguarding">Risk Safeguarding </a></li>
-                    <li><a href="service.html#transition_strategy"> Transition Strategy </a></li>
-                    <li><a href="service.html#legacy_consulting">Legacy Consulting</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="footer_menu_col hide_footer">
-                <div class="footer_nav_list">
-                  <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-    
-                </div>
-              </div>
-              <div class="footer_menu_col ">
-                <div class="footer_nav_list">
-                  <div class="responsive_map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9677949443326!2d77.30546827393043!3d28.450387192331668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce75fa74406cf%3A0x374fb2428806bb28!2sTHE%20UNIT%20BY%20IDEASHACKS!5e0!3m2!1sen!2sin!4v1693822306672!5m2!1sen!2sin"
-                      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
-              </div>
+
             </div>
-    
+
           </div>
-          <div class="footer_container">
-            <div class="footer_terms_row">
-              <div class="footer_terms_col">
-                <div class="condition">
-                  Copyright © <strong>NAISHA'S 1CR CLUB</strong>. All rights reserved.
-                </div>
-              </div>
-              <div class="footer_terms_col">
-                <div class="terms">
-                  <a href="terms&condition.html">Terms of Use</a> | <a href="privacy.html"> Privacy
-                    Policy</a> | <a href="Disclosures.html">Disclosures</a>
-                </div>
+          <div class="footer_menu_col hide_footer">
+            <div class="footer_nav_list">
+              <ul>
+                <li><a href="service.html#tax_consulting">Tax Consulting</a></li>
+                <li><a href="service.html#asset_management">Asset management </a></li>
+                <li><a href="service.html#risk_safeguarding">Risk Safeguarding </a></li>
+                <li><a href="service.html#transition_strategy"> Transition Strategy </a></li>
+                <li><a href="service.html#legacy_consulting">Legacy Consulting</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_menu_col hide_footer">
+            <div class="footer_nav_list">
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="footer_menu_col ">
+            <div class="footer_nav_list">
+              <div class="responsive_map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9677949443326!2d77.30546827393043!3d28.450387192331668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce75fa74406cf%3A0x374fb2428806bb28!2sTHE%20UNIT%20BY%20IDEASHACKS!5e0!3m2!1sen!2sin!4v1693822306672!5m2!1sen!2sin"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    <script src="script.js"></script>
+
+      </div>
+      <div class="footer_container">
+        <div class="footer_terms_row">
+          <div class="footer_terms_col">
+            <div class="condition">
+              Copyright © <strong>NAISHA'S 1CR CLUB</strong>. All rights reserved.
+            </div>
+          </div>
+          <div class="footer_terms_col">
+            <div class="terms">
+              <a href="terms&condition.html">Terms of Use</a> | <a href="privacy.html"> Privacy
+                Policy</a> | <a href="Disclosures.html">Disclosures</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

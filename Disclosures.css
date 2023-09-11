@@ -90,6 +90,279 @@ body {
     text-align: start;
 }
 
+/* --------------------------------------------modal-------------------------------------------------------- */
+
+.contact_form_section {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.message {
+    color: rgba(47, 44, 44, 0.822);
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.form label {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: rgb(14, 13, 13);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+}
+
+.form label .input01+span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    padding: 0 5px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown+span {
+    top: 50px;
+    font-size: 0.9em;
+    color: #1c292c;
+}
+
+.form label .input01:focus+span,
+.form label .input01:valid+span {
+    top: -10px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input01:valid+span {
+    color: green;
+}
+
+
+.modal_btn1 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 15px;
+    background-color: #0fc29c;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.modal_btn1 i {
+    transform: rotate(45deg);
+}
+
+.modal_btn1:hover {
+    color: #fff;
+    background: #0ba584;
+}
+
+.modal_btn2 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 15px;
+    background-color: #000000;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+
+.modal_btn2:hover {
+    color: #fff;
+    background: #e01616;
+}
+
+.modal_btn_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ---------------------------------------------floating_modal------------------------------------------------------------ */
+
+.floating_modal {
+    width: 100%;
+    background-color: #1c292c;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    z-index: 99;
+    bottom: 0px;
+}
+
+.floating_modal_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating_modal_head {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.floating_modal_input_container {
+    margin-top: 5px;
+    display: flex;
+}
+
+.floating_modal_input_container button {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    left: -20px;
+    border: 1px solid rgb(255, 99, 99);
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: rgb(255, 99, 99);
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+}
+
+.floating_modal_input_container button:hover {
+    background-color: #f24545;
+    border: 1px solid #f24545;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.floating_modal_input_container button:active {
+    transform: scale(1.05);
+}
+
+.floating_modal_input_container label {
+    width: 220px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    color: #44494a;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* --------------------------------------------------------------------floating_contact--------------------------------------- */
+.floating_contact_btn_container {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #25D366;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .2s ease-in-out;
+    z-index: 99;
+}
+
+.floating_contact_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating_contact_btn i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.floating_contact_btn_container a {
+    text-decoration: none;
+}
+
+.floating_contact_btn_container:hover {
+    background-color: #199547;
+    transform: scale(0.95);
+}
+
 @media screen and (max-width:450px) {
     .Disclosures_section {
         width: 100%;
@@ -123,5 +396,82 @@ body {
         font-size: 12px;
         text-align: start;
     }
+
+   /* ----------------------------------------------------------------floating_modal------------------------------------------ */
+  .floating_modal_input_container {
+    margin-top: 10px;
+    display: flex;
+    transform: scale(0.85);
+    gap: 5px;
+  }
+
+  .floating_modal_head {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+  }
+
+  .floating_modal {
+    width: 100%;
+    background-color: #1c292c;
+    color: #fff;
+    padding: 2px;
+    position: fixed;
+    z-index: 90;
+    bottom: 0px;
+  }
+
+  .floating_modal_input_container {
+    margin-top: 5px;
+    display: flex;
+  }
+
+  .floating_modal_input_container label {
+    padding-left: 20px;
+  }
+
+  .floating_modal_input_container button {
+    left: -22px;
+  }
+
+  /* --------------------------------------------------------------------floating_contact--------------------------------------- */
+  .floating_contact_btn_container {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #25D366;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .2s ease-in-out;
+    z-index: 99;
+  }
+
+  .floating_contact_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .floating_contact_btn i {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .floating_contact_btn_container a {
+    text-decoration: none;
+  }
+
+  .floating_contact_btn_container:hover {
+    background-color: #199547;
+    transform: scale(0.95);
+  }
 
 }

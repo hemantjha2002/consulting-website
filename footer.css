@@ -6,6 +6,7 @@ footer {
     background-image: url('Images/footer_img.png');
     background-size: cover;
     overflow: hidden;
+    padding-bottom: 85px;
 }
 
 .footer_section {
